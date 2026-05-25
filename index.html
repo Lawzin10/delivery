@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Prime - Delivery Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- HEADER FIXO -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-brand">Sabor</span>
+                    <span class="logo-prime">Prime</span>
+                </div>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#cardapio" class="nav-link">Cardápio</a>
+                <a href="#promocoes" class="nav-link">Promoções</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#avaliacoes" class="nav-link">Avaliações</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-cart" id="btnCart" aria-label="Carrinho">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="#cardapio" class="btn-order">
+                    <i class="fas fa-fire"></i>
+                    Fazer Pedido
+                </a>
+                <button class="btn-menu-mobile" id="btnMenuMobile" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="btn-close-menu" id="btnCloseMenu">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    Início
+                </a>
+                <a href="#cardapio" class="mobile-nav-link">
+                    <i class="fas fa-book-open"></i>
+                    Cardápio
+                </a>
+                <a href="#promocoes" class="mobile-nav-link">
+                    <i class="fas fa-percent"></i>
+                    Promoções
+                </a>
+                <a href="#sobre" class="mobile-nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    Sobre Nós
+                </a>
+                <a href="#avaliacoes" class="mobile-nav-link">
+                    <i class="fas fa-star"></i>
+                    Avaliações
+                </a>
+                <a href="#contato" class="mobile-nav-link">
+                    <i class="fas fa-phone"></i>
+                    Contato
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-crown"></i>
+                Delivery Premium
+            </div>
+            <h1 class="hero-title">
+                Sabores que <span class="highlight">conquistam</span><br>
+                seu paladar
+            </h1>
+            <p class="hero-subtitle">
+                Descubra uma experiência gastronômica única com os melhores hambúrgueres, 
+                pizzas artesanais e sobremesas irresistíveis. Entrega rápida e sabor inesquecível.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Minutos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Avaliação</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Pedidos</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#cardapio" class="btn-primary">
+                    <i class="fas fa-utensils"></i>
+                    Ver Cardápio
+                </a>
+                <a href="#promocoes" class="btn-secondary">
+                    <i class="fas fa-tag"></i>
+                    Ver Promoções
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=600&fit=crop" alt="Hambúrguer Premium" class="hero-img">
+                <div class="floating-card card-1">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Entrega Rápida</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-fire"></i>
+                    <span>Feito na Hora</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Role para explorar</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossas Especialidades</span>
+                <h2 class="section-title">Escolha sua Categoria</h2>
+                <p class="section-desc">Explore nossas categorias e encontre o sabor perfeito para você</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card active" data-category="hamburgueres">
+                    <div class="category-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <h3>Hambúrgueres</h3>
+                    <span class="category-count">12 itens</span>
+                </div>
+                <div class="category-card" data-category="pizzas">
+                    <div class="category-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <h3>Pizzas</h3>
+                    <span class="category-count">8 itens</span>
+                </div>
+                <div class="category-card" data-category="bebidas">
+                    <div class="category-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Bebidas</h3>
+                    <span class="category-count">15 itens</span>
+                </div>
+                <div class="category-card" data-category="sobremesas">
+                    <div class="category-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>Sobremesas</h3>
+                    <span class="category-count">10 itens</span>
+                </div>
+                <div class="category-card" data-category="combos">
+                    <div class="category-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Combos</h3>
+                    <span class="category-count">6 itens</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOÇÕES -->
+    <section class="promocoes" id="promocoes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ofertas Especiais</span>
+                <h2 class="section-title">Promoções do Dia</h2>
+                <p class="section-desc">Aproveite nossas ofertas exclusivas com descontos imperdíveis</p>
+            </div>
+            <div class="promo-grid">
+                <div class="promo-card promo-large">
+                    <div class="promo-badge">-30%</div>
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&h=400&fit=crop" alt="Combo Família">
+                    <div class="promo-content">
+                        <h3>Combo Família</h3>
+                        <p>2 hambúrgueres + 2 batatas + 4 refrigerantes</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 89,90</span>
+                            <span class="new-price">R$ 62,90</span>
+                        </div>
+                        <button class="btn-add-promo" data-name="Combo Família" data-price="62.90">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-badge">-20%</div>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Pizza Dois Sabores">
+                    <div class="promo-content">
+                        <h3>Pizza Dois Sabores</h3>
+                        <p>Grande + refrigerante 2L</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 59,90</span>
+                            <span class="new-price">R$ 47,90</span>
+                        </div>
+                        <button class="btn-add-promo" data-name="Pizza Dois Sabores" data-price="47.90">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-badge">-25%</div>
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop" alt="Sobremesa Especial">
+                    <div class="promo-content">
+                        <h3>Sobremesa Especial</h3>
+                        <p>2 milkshakes + 2 brownies</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 39,90</span>
+                            <span class="new-price">R$ 29,90</span>
+                        </div>
+                        <button class="btn-add-promo" data-name="Sobremesa Especial" data-price="29.90">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nosso Cardápio</span>
+                <h2 class="section-title">Delícias à sua Escolha</h2>
+                <p class="section-desc">Selecionamos os melhores pratos para você aproveitar</p>
+            </div>
+
+            <div class="cardapio-tabs">
+                <button class="tab-btn active" data-tab="hamburgueres">
+                    <i class="fas fa-hamburger"></i>
+                    Hambúrgueres
+                </button>
+                <button class="tab-btn" data-tab="pizzas">
+                    <i class="fas fa-pizza-slice"></i>
+                    Pizzas
+                </button>
+                <button class="tab-btn" data-tab="bebidas">
+                    <i class="fas fa-glass-cheers"></i>
+                    Bebidas
+                </button>
+                <button class="tab-btn" data-tab="sobremesas">
+                    <i class="fas fa-ice-cream"></i>
+                    Sobremesas
+                </button>
+                <button class="tab-btn" data-tab="combos">
+                    <i class="fas fa-box-open"></i>
+                    Combos
+                </button>
+            </div>
+
+            <div class="cardapio-content">
+                <!-- HAMBÚRGUERES -->
+                <div class="tab-content active" id="tab-hamburgueres">
+                    <div class="products-grid">
+                        <div class="product-card" data-name="Prime Classic" data-price="32.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=400&fit=crop" alt="Prime Classic">
+                                <div class="product-tag">Mais Vendido</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Prime Classic</h3>
+                                <p>Hambúrguer 180g, queijo cheddar, alface, tomate e molho especial</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 32,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Prime Bacon" data-price="38.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=400&fit=crop" alt="Prime Bacon">
+                            </div>
+                            <div class="product-info">
+                                <h3>Prime Bacon</h3>
+                                <p>Hambúrguer 180g, bacon crocante, queijo, cebola caramelizada</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 38,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Prime Duplo" data-price="45.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=400&fit=crop" alt="Prime Duplo">
+                                <div class="product-tag">Novo</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Prime Duplo</h3>
+                                <p>Dois hambúrgueres 180g, queijo duplo, bacon e molho BBQ</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 45,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Prime Chicken" data-price="29.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=400&fit=crop" alt="Prime Chicken">
+                            </div>
+                            <div class="product-info">
+                                <h3>Prime Chicken</h3>
+                                <p>Filé de frango empanado, queijo, alface e maionese especial</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 29,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIZZAS -->
+                <div class="tab-content" id="tab-pizzas">
+                    <div class="products-grid">
+                        <div class="product-card" data-name="Pizza Margherita" data-price="42.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=400&fit=crop" alt="Pizza Margherita">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pizza Margherita</h3>
+                                <p>Molho de tomate, mussarela, manjericão fresco e azeite</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 42,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Pizza Pepperoni" data-price="48.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=400&fit=crop" alt="Pizza Pepperoni">
+                                <div class="product-tag">Mais Vendido</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Pizza Pepperoni</h3>
+                                <p>Molho de tomate, mussarela e pepperoni importado</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 48,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Pizza Quatro Queijos" data-price="52.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=400&fit=crop" alt="Pizza Quatro Queijos">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pizza Quatro Queijos</h3>
+                                <p>Mussarela, parmesão, gorgonzola e provolone</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 52,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Pizza Frango Catupiry" data-price="46.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Pizza Frango Catupiry">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pizza Frango Catupiry</h3>
+                                <p>Frango desfiado, catupiry, milho e orégano</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 46,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEBIDAS -->
+                <div class="tab-content" id="tab-bebidas">
+                    <div class="products-grid">
+                        <div class="product-card" data-name="Refrigerante 350ml" data-price="7.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&h=400&fit=crop" alt="Refrigerante">
+                            </div>
+                            <div class="product-info">
+                                <h3>Refrigerante 350ml</h3>
+                                <p>Coca-Cola, Guaraná, Sprite ou Fanta</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 7,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Refrigerante 2L" data-price="14.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&h=400&fit=crop" alt="Refrigerante 2L">
+                            </div>
+                            <div class="product-info">
+                                <h3>Refrigerante 2L</h3>
+                                <p>Coca-Cola, Guaraná, Sprite ou Fanta</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 14,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Suco Natural" data-price="12.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop" alt="Suco Natural">
+                            </div>
+                            <div class="product-info">
+                                <h3>Suco Natural</h3>
+                                <p>Laranja, Limão, Maracujá ou Abacaxi</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 12,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Milkshake" data-price="16.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=400&fit=crop" alt="Milkshake">
+                                <div class="product-tag">Novo</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Milkshake</h3>
+                                <p>Chocolate, Morango, Baunilha ou Ovomaltine</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 16,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOBREMESAS -->
+                <div class="tab-content" id="tab-sobremesas">
+                    <div class="products-grid">
+                        <div class="product-card" data-name="Brownie com Sorvete" data-price="18.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=400&fit=crop" alt="Brownie">
+                            </div>
+                            <div class="product-info">
+                                <h3>Brownie com Sorvete</h3>
+                                <p>Brownie quente com sorvete de baunilha e calda</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 18,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Pudim de Leite" data-price="14.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=400&h=400&fit=crop" alt="Pudim">
+                            </div>
+                            <div class="product-info">
+                                <h3>Pudim de Leite</h3>
+                                <p>Pudim cremoso com calda de caramelo</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 14,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Torta de Limão" data-price="16.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=400&h=400&fit=crop" alt="Torta de Limão">
+                            </div>
+                            <div class="product-info">
+                                <h3>Torta de Limão</h3>
+                                <p>Torta gelada com creme de limão e merengue</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 16,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Mousse de Chocolate" data-price="15.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=400&h=400&fit=crop" alt="Mousse">
+                                <div class="product-tag">Mais Vendido</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Mousse de Chocolate</h3>
+                                <p>Mousse aerada com raspas de chocolate</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 15,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMBOS -->
+                <div class="tab-content" id="tab-combos">
+                    <div class="products-grid">
+                        <div class="product-card" data-name="Combo Individual" data-price="39.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=400&fit=crop" alt="Combo Individual">
+                            </div>
+                            <div class="product-info">
+                                <h3>Combo Individual</h3>
+                                <p>1 hambúrguer + batata + refrigerante 350ml</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 39,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Combo Casal" data-price="69.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=400&fit=crop" alt="Combo Casal">
+                            </div>
+                            <div class="product-info">
+                                <h3>Combo Casal</h3>
+                                <p>2 hambúrgueres + 2 batatas + 2 refrigerantes</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 69,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Combo Pizza Família" data-price="79.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Combo Pizza">
+                            </div>
+                            <div class="product-info">
+                                <h3>Combo Pizza Família</h3>
+                                <p>Pizza grande + 4 refrigerantes 350ml</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 79,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card" data-name="Combo Festa" data-price="119.90">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=400&fit=crop" alt="Combo Festa">
+                                <div class="product-tag">Popular</div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Combo Festa</h3>
+                                <p>4 hambúrgueres + 4 batatas + 4 refrigerantes</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 119,90</span>
+                                    <button class="btn-add">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-images">
+                    <div class="sobre-img-main">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&h=600&fit=crop" alt="Nossa Cozinha">
+                    </div>
+                    <div class="sobre-img-small">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&h=300&fit=crop" alt="Ingredientes">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">10+</span>
+                        <span class="exp-text">Anos de<br>Experiência</span>
+                    </div>
+                </div>
+                <div class="sobre-content">
+                    <span class="section-tag">Sobre Nós</span>
+                    <h2 class="section-title">Uma História de Sabor e Paixão</h2>
+                    <p class="sobre-text">
+                        Desde 2014, o Sabor Prime tem se dedicado a oferecer a melhor experiência 
+                        gastronômica em delivery. Nossos chefs selecionam ingredientes frescos e 
+                        de alta qualidade para criar pratos que encantam o paladar.
+                    </p>
+                    <p class="sobre-text">
+                        Acreditamos que comida de verdade é feita com amor, dedicação e os 
+                        melhores ingredientes. Cada prato que sai da nossa cozinha é preparado 
+                        com o mesmo cuidado que você teria em casa.
+                    </p>
+                    <div class="sobre-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Ingredientes Frescos</h4>
+                                <p>Selecionados diariamente</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Entrega Rápida</h4>
+                                <p>Em até 30 minutos</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Qualidade Premium</h4>
+                                <p>Certificado de excelência</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="avaliacoes" id="avaliacoes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O que Nossos Clientes Dizem</h2>
+                <p class="section-desc">Confira as avaliações de quem já experimentou nossos sabores</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "O melhor hambúrguer que já comi! A carne é suculenta, o pão é macio e 
+                        o molho especial é incrível. Entrega super rápida!"
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Maria Silva">
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <span>Cliente desde 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card featured">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "A pizza de pepperoni é simplesmente divina! Massa fina e crocante, 
+                        queijo derretido na medida certa. Já pedi mais de 20 vezes e nunca me decepcionei."
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="João Pedro">
+                        <div class="author-info">
+                            <h4>João Pedro</h4>
+                            <span>Cliente desde 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">
+                        "Adoro o combo família! É perfeito para nossas noites de filme em casa. 
+                        A batata frita é crocante e o milkshake é delicioso."
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Ana Costa">
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTREGA -->
+    <section class="entrega" id="entrega">
+        <div class="container">
+            <div class="entrega-grid">
+                <div class="entrega-content">
+                    <span class="section-tag">Área de Entrega</span>
+                    <h2 class="section-title">Entrega Rápida e Segura</h2>
+                    <p class="entrega-desc">
+                        Preencha seus dados de entrega e receba seu pedido no conforto da sua casa. 
+                        Cobrimos toda a região com entregas em até 30 minutos.
+                    </p>
+                    <div class="delivery-info">
+                        <div class="delivery-item">
+                            <div class="delivery-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="delivery-text">
+                                <h4>Tempo Médio</h4>
+                                <p>15 a 30 minutos</p>
+                            </div>
+                        </div>
+                        <div class="delivery-item">
+                            <div class="delivery-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="delivery-text">
+                                <h4>Raio de Entrega</h4>
+                                <p>Até 8 km</p>
+                            </div>
+                        </div>
+                        <div class="delivery-item">
+                            <div class="delivery-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="delivery-text">
+                                <h4>Taxa de Entrega</h4>
+                                <p>A partir de R$ 5,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entrega-form-wrapper">
+                    <div class="entrega-form">
+                        <h3>Informações de Entrega</h3>
+                        <div class="form-group">
+                            <label for="endereco">Endereço Completo</label>
+                            <input type="text" id="endereco" placeholder="Rua, número, complemento">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" placeholder="00000-000" maxlength="9">
+                            </div>
+                            <div class="form-group">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" id="bairro" placeholder="Seu bairro">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="referencia">Ponto de Referência</label>
+                            <input type="text" id="referencia" placeholder="Ex: Próximo ao mercado">
+                        </div>
+                        <div class="delivery-estimate">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Tempo estimado: <strong>20 minutos</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fale Conosco</span>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-desc">Tem alguma dúvida? Estamos aqui para ajudar você</p>
+            </div>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <div class="contato-card">
+                        <div class="contato-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contato-text">
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contato-card">
+                        <div class="contato-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contato-text">
+                            <h4>E-mail</h4>
+                            <p>contato@saborprime.com</p>
+                        </div>
+                    </div>
+                    <div class="contato-card">
+                        <div class="contato-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contato-text">
+                            <h4>Endereço</h4>
+                            <p>Rua dos Sabores, 123 - Centro</p>
+                        </div>
+                    </div>
+                    <div class="contato-card">
+                        <div class="contato-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contato-text">
+                            <h4>Horário</h4>
+                            <p>Seg a Dom: 11h às 23h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-form-wrapper">
+                    <form class="contato-form" id="contatoForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" placeholder="Assunto da mensagem" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#home" class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-brand">Sabor</span>
+                                <span class="logo-prime">Prime</span>
+                            </div>
+                        </a>
+                        <p class="footer-desc">
+                            A melhor experiência gastronômica em delivery. 
+                            Sabores premium entregues na porta da sua casa.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#cardapio">Cardápio</a></li>
+                            <li><a href="#promocoes">Promoções</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Categorias</h4>
+                        <ul>
+                            <li><a href="#cardapio">Hambúrgueres</a></li>
+                            <li><a href="#cardapio">Pizzas</a></li>
+                            <li><a href="#cardapio">Bebidas</a></li>
+                            <li><a href="#cardapio">Sobremesas</a></li>
+                            <li><a href="#cardapio">Combos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> (61) 99241-2437</li>
+                            <li><i class="fas fa-envelope"></i> iago180@saborprime.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Rua dos Sabores, 123</li>
+                            <li><i class="fas fa-clock"></i> Seg-Dom: 11h às 23h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Sabor Prime. Dessenvolvimento Iago Augusto Alves Leite.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de fazer um pedido no Sabor Prime." 
+       class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CARRINHO SIDEBAR -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>
+                <i class="fas fa-shopping-bag"></i>
+                Seu Pedido
+            </h3>
+            <button class="btn-close-cart" id="btnCloseCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Seu carrinho está vazio</p>
+                <span>Adicione itens do cardápio</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price" id="totalPrice">R$ 0,00</span>
+            </div>
+            <button class="btn-checkout" id="btnCheckout">
+                <i class="fab fa-whatsapp"></i>
+                Finalizar Pedido
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Item adicionado ao carrinho!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
